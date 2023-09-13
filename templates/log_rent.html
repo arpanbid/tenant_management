@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log a rent</title>
+</head>
+<body>
+    <h1>Log a rent</h1>
+	
+	    
+	<form action="/rent_submit" method="post">
+	
+		<div>
+            <label for="names">Name of Tenant:</label>
+            <select id="names" name="names" required>
+            <option value="">Select a tenant</option>
+                {% for name in names %}
+                <option value="{{ name }}">{{name}}</option>
+            	{% endfor %}
+            </select>
+        </div>
+		
+    	
+    
+		<br>
+        
+        <!-- Amount -->
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value={today} min="2022-01-01" max="2030-12-31">
+        
+        <div>
+            <label for="months">Select month:</label>
+            <select id="months" name="months" required>
+            <option value="">Select Month</option>
+                {% for month in months %}
+                <option value="{{ month }}">{{month}}</option>
+            	{% endfor %}
+            </select>
+        </div>
+     
+        
+        
+        <a>selected rent is {{selected_rent}}</a>
+        
+        
+        <div>
+            <input type="submit" value="Submit_rent">
+        </div>
+    </form>
+
+	<a href="admin_dashboard">Back to Dashboard</a>
+
+</body>
+</html>

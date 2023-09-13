@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Details</title>
+</head>
+<body>
+    <h1>Rent Details</h1>
+
+    <form method="POST">
+        
+    
+    
+        <div>
+            <label for="dropdown">Select Tenant:</label>
+            <select id="dropdown" name="dropdown" required>
+            <option value="">Select a tenant</option>
+                {% for name in names %}
+                <option value="{{ name }}">{{name}}</option>
+            	{% endfor %}
+            </select>
+        </div>
+        <br>
+    
+    
+     <input type="submit" value="Filter">
+    </form>
+	
+	<br><br>
+		
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Tenant Sl No</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Month</th>
+                <th>Comments</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item['Sl No'] }}</td>
+                    <td>{{ item['Tenant Sl No'] }}</td>
+                    <td>{{ item['Name'] }}</td>
+                    <td>{{ item['Amount'] }}</td>
+                    <td>{{ item['Date'] }}</td>
+                    <td>{{ item['Month'] }}</td>
+                    <td>{{ item['Comments'] }}</td>
+                    
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+	   
+    
+    
+    
+	
+	<a href="admin_dashboard">Back to Dashboard</a>
+	
+    
+    
+    
+	
+
+
+</body>
+</html>

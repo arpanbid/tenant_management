@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant Details</title>
+</head>
+<body>
+    <h1>Tenant Details</h1>
+
+    <form method="POST">
+        
+    
+    <label for="current_tenant">Current Tenant:</label>
+        <input type="checkbox" id="current_tenant" name="current_tenant">
+        <br>
+    
+    
+     <input type="submit" value="Filter">
+    </form>
+	
+	
+	
+	
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Room No</th>
+                <th>Gender</th>
+                <th>Is Hostel</th>
+                <th>admin</th>
+                <th>rent</th>
+                <th>advance</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item['Name'] }}</td>
+                    <td>{{ item['Father Name'] }}</td>
+                    <td>{{ item['Address'] }}</td>
+                    <td>{{ item['Phone'] }}</td>
+                    <td>{{ item['Email'] }}</td>
+                    <td>{{ item['Room'] }}</td>
+                    <td>{{ item['Gender'] }}</td>
+                    <td>{{ item['Is Hostel'] }}</td>
+                    <td>{{ item['admin'] }}</td>
+                    <td>{{ item['rent'] }}</td>
+                    <td>{{ item['advance'] }}</td>
+                    <td>{{ item['StartDate'] }}</td>
+                    <td>{{ item['EndDate'] }}</td>
+                    <td>{{ item['Comments'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+	   
+    
+    
+    
+	
+	<a href="admin_dashboard">Back to Dashboard</a>
+	
+    
+    
+    
+	
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+Sl No,Name,Father Name,Address,Phone,Email,Room,Gender,Is Hostel,admin,rent,advance,StartDate,EndDate,Comments
+1,Arpan,SK,"462, Sahid Nagar",9853337774,arpan@yahoo.com,22,male,No,user1,1800,4000,2023-04-03,,
+2,Sangita,SM,"462, Sahid Nagar, Bhubaneswar",7381762223,Sangita@yahoo.com,21,female,No,user1,1500,3000,2022-04-03,2023-01-19,
+3,Smita,AS,L3/84,9853399292,Smita@yahoo.com,20,female,No,user1,1600,4000,2021-04-03,,
+4,SK,BK,Jaleswar,9937222820,sk@gmail.com,19,male,No,user1,1500,4000,2020-04-03,,
+5,Shree,SM,462,7387877799,Shree@gmail.com,18,female,No,user1,1400,4000,2023-05-03,2023-09-19,
+6,Papan,Fatu,"400, Sahid Ngr",9988998899,papai@gmail.com,17,male,No,user1,1800,4000,2023-06-03,,Nothing
+7,Papai,SKB,"401, Sahid Ngr",9988993311,papan@gmail.com,16,male,No,user1,1800,3500,2023-08-03,,
+8,arpap,aaa,401 Sahid,9998884441,arpapa@qq.ds,14,male,on,user1,1800,4000,2021-04-03,2023-01-19,
+9,pink,blue,colors,8877887788,qwe@123.as,13,female,on,user1,1700,4000,2021-05-03,,
+10,white,qq,aa,2233223322,qq@11.cc,11,female,Yes,user1,1700,3000,2023-07-03,,
+11,Shri,SNM,Banki,8877887788,shri@re.com,10,female,Yes,user1,1700,4000,2021-06-03,,Nothing to write
+12,Violet,dre,wwe,8877887799,aawe@qs.ds,7,male,Yes,user1,1800,4500,2021-06-03,,
+13,arpap,ss,"462, shd ngr",8877887766,aa@aa.com,6,female,Yes,user1,1900,3000,2021-08-03,,
+14,pap,ww,dd,2288227766,aa@12.de,5,female,Yes,user1,1500,3000,2023-01-03,2023-05-19,

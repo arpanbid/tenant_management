@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload with Dropdown</title>
+</head>
+<body>
+    <h1>Upload a File</h1>
+
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <div>
+            <label for="file">Select a File:</label>
+            <input type="file" id="file" name="file" required>
+        </div>
+        
+        <div>
+            <label for="photo">Select a photo:</label>
+            <input type="file" id="photo" name="photo" required>
+        </div>
+        
+       
+        
+        
+         <div>
+            <label for="dropdown">Select an Option:</label>
+            <select id="dropdown" name="option" required>
+            <option value="">Select a tenant</option>
+                {% for category in categories %}
+                <option value="{{ category }}">{{category}}</option>
+            	{% endfor %}
+            </select>
+        </div>
+        
+        
+        <div>
+            <input type="submit" value="Upload">
+        </div>
+    </form>
+
+	<a href="admin_dashboard">Back to Dashboard</a>
+
+</body>
+</html>
